@@ -10,7 +10,7 @@ RUN sed -i "s/Listen 80/Listen 8080/g" /etc/httpd/conf/httpd.conf
 
 EXPOSE 8080
 
-RUN chgrp -R 0 /run/httpd /etc/httpd/ /var/www/html && chmod -R g=u /run/httpd /etc/httpd/ /var/www/html
+RUN chgrp -R 0 /run/httpd /etc/httpd/ /var/www/html /etc/httpd/logs && chmod -R g=u /run/httpd /etc/httpd/ /var/www/html /etc/httpd/logs
 
 USER 1001
 
