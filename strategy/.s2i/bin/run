@@ -1,9 +1,0 @@
-echo "<1 ========================>"
-echo "PRIMA DI mysql -uio -pio io < users.sql"
-mysql -uio -pio io < users.sql
-echo "dopo DI mysql -uio -pio io < users.sql"
-echo "<2 ========================>"
-echo "PRIMA DI /usr/libexec/s2i/run"
-exec /usr/libexec/s2i/run
-echo "DOPO DI /usr/libexec/s2i/run"
-echo "<3 ========================>"
